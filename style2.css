@@ -181,39 +181,39 @@ a{
     }
 }
 #Div1{
-    background-image: url("images/slidderjacket2.webp");
+    background-image: url("image/slidderjacket2.webp");
     background-size: cover;
     background-position: center;
 
     &:hover{
-        background-image: url("images/slidderjacket.webp");
+        background-image: url("image/slidderjacket.webp");
         transition: all 0.5s ease-in-out;
     }
  }
 #Div2{
-    background-image: url("images/slidderjacket4.webp");
+    background-image: url("image/slidderjacket4.webp");
     background-size: cover;
     background-position: center;
     &:hover{
-        background-image: url("images/slidderjacket3.webp");
+        background-image: url("image/slidderjacket3.webp");
         transition: all 0.5s ease-in-out;
     }
 }
 #Div3{
-    background-image: url("images/checkshirtslidder2.webp");
+    background-image: url("image/checkshirtslidder2.webp");
     background-size: cover;
     background-position: center;
     &:hover{
-        background-image: url("images/checkshirtslidder.jpg");
+        background-image: url("image/checkshirtslidder.jpg");
         transition: all 0.5s ease-in-out;
     }
 }
 #Div4{
-    background-image: url("images/shirt8.webp");
+    background-image: url("image/shirt8.webp");
     background-size: cover;
     background-position: center;
     &:hover{
-        background-image: url("images/shirt7.webp");
+        background-image: url("image/shirt7.webp");
         transition: all 0.5s ease-in-out;
     }
 }
