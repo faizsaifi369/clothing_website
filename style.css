@@ -76,7 +76,7 @@ body,html{
 }
 .dropdown button{
     height: 50%;
-    width: 7.7vw;
+    width: 8.3vw;
     background-color: transparent;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -85,7 +85,7 @@ body,html{
     font-weight: lighter;
 }
 .dropdown a{
-    height: 50px;
+    height: 40px;
     width: 150px;
     display: inline-block;
     color: black;
@@ -118,7 +118,7 @@ body,html{
 }
 .slidder{
     height: 60vh;
-    background-color:gainsboro;
+    background-color:rgb(224, 221, 221);
     display: flex;
     align-items: center;
     overflow-x: scroll;
@@ -151,7 +151,7 @@ body,html{
     width: 21%;
     background-color: gainsboro;
     box-sizing: border-box;
-    border:10px solid white;
+    border:10px solid #ffffff ;
     border-radius: 10px;
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -177,13 +177,13 @@ body,html{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6vh;
+    font-size: 5.5vh;
     font-weight: lighter;
     background-image:linear-gradient(to right,snow ,rgb(216, 214, 214),snow);
     margin-top: 3.5vh;
     margin-bottom: 2vh;
     &:hover{
-        font-size: 6.3vh;
+        font-size: 5.6vh;
         transition: all 1s ease-in-out;
     }
 }
@@ -268,10 +268,10 @@ body,html{
 footer{
     height: 40vh;
     width: 100%;
+    padding-top: 25px;
     background-color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .contactUs{
     color: white;
@@ -291,6 +291,13 @@ footer{
                                             /* Responsive */
 
 @media screen and (max-width:550px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #ffffff;
+    }
     #navBar{
         height: 17vh;
         width: 100%;
@@ -338,7 +345,7 @@ footer{
 }  
 #btnforphone2{
     height: 5vh;
-    width: 25vw;
+    width: 28vw;
     font-size: 21px;
     color: white;
     font-weight: lighter;
@@ -364,7 +371,7 @@ footer{
     font-size: 15px;
 }
 .dropdown a{
-    height: 3.5vh;
+    height: 30px;
     width: 30vw;
     display: inline-block;
     color: black;
@@ -405,25 +412,25 @@ footer{
     border-radius: 5px ;
 }
 #trendingHeader{
-    height: 7.5vh;
+    height: 7vh;
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: lighter;
-    background-image:linear-gradient(to right,snow ,rgb(216, 214, 214),snow);
+    background-image:linear-gradient(to right,snow,rgb(224, 223, 223),snow);
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
     text-decoration: underline;
     &:hover{
-        font-size: 3.1vh;
+        font-size: 2.6vh;
         transition: all 1s ease-in-out;
     }
 }
 .slidder{
     height: 30vh;
-    background-color:gainsboro;
+    background-color:rgb(226, 226, 226);
     display: flex;
     align-items: center;
     overflow-x: scroll;
@@ -438,7 +445,7 @@ footer{
     width: 33%;
     background-color: gainsboro;
     box-sizing: border-box;
-    border:3px solid white;
+    border:1px solid rgb(0, 0, 0);
     border-radius: 10px;
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -452,7 +459,7 @@ footer{
     width: 30%;
     background-color: gainsboro;
     box-sizing: border-box;
-    border:2.5px solid white;
+    border:1px solid rgb(0, 0, 0);
     border-radius: 10px;
     background-position:top,center;
     &:hover{
@@ -571,4 +578,3 @@ footer{
     margin: 1px;
 }
 }
-
