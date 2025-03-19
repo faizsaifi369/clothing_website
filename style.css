@@ -2,60 +2,53 @@
     padding: 0%;
     margin: 0%;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
 }
 body,html{
-    height: 100%;
-    width: 100%;
     padding: 0%;
     margin: 0%;
     overflow-x: hidden;
-}
-main{
-    height: 100%;
-    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
 }
 #fakeNavBar{
-    height:13%;
+    height: 12.5vh;
     width: 100%;
-    background-color: transparent;
 }
 #navBar{
+    height: 12.5vh;
     width: 100%;
     background-color: black;
     border-bottom: 1.5px solid snow;
     box-sizing: border-box;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:left;
     align-items: center;
-    gap:10px;
+    gap:4vw;
     position: fixed;
     box-shadow:black 0.5px 0.5px 2px 0.5px;
     z-index: 10;
 }
 #logo{
-    height: 90px;
-    width: auto;
-    margin-left: 6%;
-    margin-right: -2.%;
-    object-fit: cover;
+    height: 90%;
+    width: 7.5vw;
+    margin-left: 7vw;
+    margin-right: -2.5vw;
+    object-fit: contain;
     filter:grayscale(10px);
 }
 .navButtons{
-    font-size: 26px;
+    height: 50%;
+    width: 7vw;
+    font-size: 3.2vh;
     color: white;
     font-weight: lighter;
     background-color:transparent;
     box-sizing: border-box;
     border: transparent;
-    padding:8px;
-    padding-left: 9px;
-    padding-right: 9px;
-    border-radius: 5px;
-    border: 1px solid black;
     &:hover{
-        border: 1px solid snow;
+        border: 1.5px solid snow;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 9px;
     }
 }
 .navButtons a{
@@ -63,12 +56,12 @@ main{
     color: white;
 }
 .moreButton{
-    height:8vh;
+    height: 60%;
     width: 4vw;
-    background-color: red;
+    background-color: transparent;
     box-sizing: border-box;
     border: transparent;
-    margin-left: 21vw;
+    margin-left: 27vw;
 }
 .line{
     height: 8%;
@@ -79,41 +72,43 @@ main{
     border-radius: 5px ;
 }
 .dropdown{
-    margin: 24px;
+    margin: 30px;
 }
 .dropdown button{
+    height: 50%;
+    width: 8.3vw;
     background-color: transparent;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-sizing: border-box;
+    font-size: 3.2vh;
     font-weight: lighter;
 }
 .dropdown a{
-    font-size: 24px;
-    padding: 10px;
-    padding-left: 22px;
-    padding-right: 22px;
-    margin: 5px;
+    height: 40px;
+    width: 150px;
     display: inline-block;
     color: black;
     background-color: snow;
     text-decoration: none;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
+    font-size: 25px;
+    padding-top: 5px;
+    text-decoration:underline;
+    margin: 5px;
     &:hover{
         color: white;
         background-color:black;
         border: 1px solid white; 
-        text-decoration: underline;
     }
 }
 .dropdown .content{
-    padding: 5px;
     display: none;
     position:absolute;
     min-width: 100px;
-    max-width: 640px;
+    max-width: 700px;
     background-color: transparent;
     box-shadow: 1px 1px 10px 1px grey;
     border-radius: 10px;
@@ -122,34 +117,38 @@ main{
     display: block;
 }
 .slidder{
-    padding: 10px;
+    height: 60vh;
     background-color:rgb(224, 221, 221);
     display: flex;
     align-items: center;
-    overflow-x: auto;
+    overflow-x: scroll;
     scrollbar-color: black transparent;    
-    scrollbar-width:none;
+    scrollbar-width:thin;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 1px 1px 6px 1px gray;
 }
 .pages{
+    height: 100%;
+    font-size: 100px;
+    min-width: 100%;
     background-color:transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-behavior:smooth;
     scroll-snap-stop: always;    
     scroll-snap-align: center;
+    gap: 2vw;
 }
-/* .slidderItems{
+.slidderItems{
     height: 70%;
-    min-width: 20%;
+    min-width: 15vw;
     margin: 5px;
     background-color: black;
-} */
+}
 .largeSlidderItem{
-    height: 360px;
-    width: 320px;
+    height: 90%;
+    width: 21%;
     background-color: gainsboro;
     box-sizing: border-box;
     border:10px solid #ffffff ;
@@ -157,70 +156,54 @@ main{
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position:center;
-    position: relative;
     &:hover{
         box-shadow:rgb(113, 113, 113) 1px 1px 9px 3px;
-        z-index: 5;
     }
 }
-.Btwline{
-    height: 7px;
-    width: 100px;
-    background-color:#ffffff;
-    /* box-shadow: 1px 1px 10px 1px rgb(139, 139, 139); */
-    border: none;
-}
 .smallSlidderItem{
-    height: 185px;
-    width: 180px;
+    height: 85%;
+    width: 18%;
     background-color: gainsboro;
     box-sizing: border-box;
-    border:8px solid white;
+    border:10px solid white;
     border-radius: 10px;
-    margin-bottom:185px;
-    margin-left: 10px;
-    position: relative;
-    margin-right:-20px;
-    z-index: 5;
-    box-shadow:rgb(152, 152, 152) 1px 1px 7px 1px;
-
     &:hover{
         box-shadow:rgb(113, 113, 113) 1px 1px 9px 3px;
     }
 }
 #trendingHeader{
-    height: 9%;
+    height: 10vh;
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5.5vh;
     font-weight: lighter;
-    background-image:linear-gradient(to right,white ,rgb(216, 214, 214),white);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-image:linear-gradient(to right,snow ,rgb(216, 214, 214),snow);
+    margin-top: 3.5vh;
+    margin-bottom: 2vh;
+    &:hover{
+        font-size: 5.6vh;
+        transition: all 1s ease-in-out;
+    }
 }
 #itemsContainer{
-    background-color: red;
-    height:55%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 35px;
 }
 .items{
-    height:95%;
-    width: 18vw;
+    height: 60vh;
+    width: 20vw;
     box-sizing: border-box;
+    border: 1px solid rgb(3, 3, 3);
+    margin: 1rem;
     border-radius:15px;
     display: flex;
     overflow: hidden;
-    border: 1px solid white;
-    box-shadow: 1px 1px 5px 1px rgb(202, 202, 202);
     &:hover{
-        box-shadow: 1px 1px 10px 2px rgb(126, 126, 126);
+        box-shadow: 1px 1px 15px 1px rgb(93, 92, 92);
         transform: scale(1.01);
         transition: all 0.5s ease-in-out;
     }
@@ -495,12 +478,11 @@ footer{
     height: 27vh;
     width: 40vw;
     box-sizing: border-box;
-    margin: 10px;
+    border: 1px solid rgb(3, 3, 3);
+    margin: 0.5vh;
     border-radius:10px;
     display: flex;
     overflow: hidden;
-    border: 1px solid rgb(211, 211, 211);
-    box-shadow: 1px 1px 5px 1px rgb(171, 171, 171);
     &:hover{
         box-shadow: 1px 1px 8px 2px rgb(93, 92, 92);
         transform: scale(1.01);
@@ -596,4 +578,3 @@ footer{
     margin: 1px;
 }
 }
-
